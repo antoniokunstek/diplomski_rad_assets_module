@@ -25,6 +25,8 @@ Future<List<Account>> fetchAllAccounts(String? jwtToken) async {
     },
   );
 
+
+  print(res);
   if (res.statusCode == 200) {
     Response res2 = Response.fromJson(jsonDecode(res.body));
     if (res2.successful) {
