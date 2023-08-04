@@ -10,6 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.1
+  bloc: ^8.1.1
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
