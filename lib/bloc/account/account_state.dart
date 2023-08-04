@@ -4,11 +4,7 @@ abstract class AccountsState {
   const AccountsState();
 }
 
-class AccountsLoading extends AccountsState {
-  AccountsLoading(){
-    print("Initiliazed acc loading");
-  }
-}
+class AccountsLoading extends AccountsState {}
 
 class AccountsLoaded extends AccountsState {
   final List<Account> accountList;

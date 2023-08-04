@@ -11,7 +11,6 @@ class AccountsBloc extends Bloc<AccountEvent, AccountsState> {
   }
 
   Future<void> _loadAccounts(OnLoad event, Emitter<AccountsState> state) async {
-    emit(AccountsLoading());
     try {
      List<Account> listOfAccounts = await fetchAllAccounts(event.jwtToken);
      emit(AccountsLoaded(accountList: listOfAccounts));
